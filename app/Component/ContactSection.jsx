@@ -7,38 +7,37 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="bg-gradient-to-b from-blue-50 to-white py-16 md:py-20 relative"
+      className="bg-gradient-to-b from-blue-50 to-white py-12 sm:py-16 md:py-20 relative"
     >
-      <div className="mx-auto px-6 md:px-20">
+      <div className="mx-auto px-4 sm:px-6 md:px-20">
         {/* Section Title */}
-        <div className="text-center mb-16">
-          <h3 className="text-3xl md:text-4xl font-heading font-semibold mb-4 text-blue-900">
+        <div className="text-center mb-12 sm:mb-16">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-heading font-semibold mb-4 text-blue-900">
             Get In Touch
           </h3>
-          <p className="text-lg text-slate-600 leading-[1.625rem] max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-slate-600 leading-6 sm:leading-7 max-w-2xl mx-auto">
             Need reliable <strong>AC Repair</strong> or{" "}
             <strong>Washing Machine Repair</strong> services? Our expert
             technicians are here to help you — anytime, anywhere in Delhi NCR.
           </p>
         </div>
-
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+  <div className="w-full sm:hidden">
+            <ContactForm />
+          </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start">
           {/* Left Info Section */}
-          <div className="space-y-10">
-            <div>
-              <h4 className="text-2xl font-heading font-semibold text-blue-900 leading-[1.625rem] mb-6">
-                Let&apos;s Start a Conversation
+          <div className="space-y-8 sm:space-y-10 ">
+            <div  className="hidden sm:block"   >
+              <h4 className="text-xl sm:text-2xl font-heading font-semibold text-blue-900 leading-6 sm:leading-7 mb-4 sm:mb-6">
+                Let's Start a Conversation
               </h4>
-               <p className="text-slate-700 leading-[1.625rem] mb-6">
-    Whether your <strong>AC</strong> is not cooling or your <strong>washing machine</strong> has stopped working — our expert technicians are here to help. We offer same-day doorstep appliance repair services with genuine spare parts and transparent pricing.
-      We repair <strong>AC</strong>, <strong>Washing Machine</strong>, <strong>Refrigerator</strong>, <strong>Microwave</strong>, and <strong>LED TV</strong> for all major brands.
-  </p>
-
-           
+              <p className="text-sm sm:text-base text-slate-700 leading-5 sm:leading-6">
+                Whether your <strong>AC</strong> is not cooling or your <strong>washing machine</strong> has stopped working — our expert technicians are here to help. We offer same-day doorstep appliance repair services with genuine spare parts and transparent pricing. We repair <strong>AC</strong>, <strong>Washing Machine</strong>, <strong>Refrigerator</strong>, <strong>Microwave</strong>, and <strong>LED TV</strong> for all major brands.
+              </p>
             </div>
 
             {/* Contact Details */}
-            <div className="grid gap-6">
+            <div className="grid gap-4 sm:gap-6">
               {[
                 {
                   title: "Visit Our Service Center",
@@ -50,10 +49,7 @@ export default function ContactSection() {
                       d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                     />
                   ),
-                  lines: [
-                    "C-29, BPTP Parklands, Sector-85,",
-                    "Faridabad, Haryana",
-                  ],
+                  lines: ["C-29, BPTP Parklands, Sector-85,", "Faridabad, Haryana"],
                 },
                 {
                   title: "Call Us",
@@ -92,10 +88,10 @@ export default function ContactSection() {
                   lines: ["Mon - Sun: 9:00 AM - 8:00 PM"],
                 },
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-4 group">
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-900 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                <div key={i} className="flex items-start gap-3 sm:gap-4 group">
+                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-900 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
                     <svg
-                      className="w-6 h-6"
+                      className="w-5 h-5 sm:w-6 sm:h-6"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -104,11 +100,11 @@ export default function ContactSection() {
                     </svg>
                   </div>
                   <div>
-                    <h5 className="text-lg font-semibold text-blue-900 mb-1">
+                    <h5 className="text-base sm:text-lg font-semibold text-blue-900 mb-1">
                       {item.title}
                     </h5>
                     {item.lines.map((line, j) => (
-                      <p key={j} className="text-slate-700 leading-[1.625rem]">
+                      <p key={j} className="text-sm sm:text-base text-slate-700 leading-5 sm:leading-6">
                         {line}
                       </p>
                     ))}
@@ -117,43 +113,31 @@ export default function ContactSection() {
               ))}
             </div>
 
-
             {/* Social Links */}
-            <div className="pt-6 border-t border-slate-200">
-              <h5 className="text-lg font-semibold text-blue-900 mb-4">
+            <div className="pt-4 sm:pt-6 border-t border-slate-200">
+              <h5 className="text-base sm:text-lg font-semibold text-blue-900 mb-3 sm:mb-4">
                 Follow Us
               </h5>
-              <div className="flex gap-4">
-                <a
-                  href="https://www.facebook.com/profile.php?id=61567005412129"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-900 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-sm"
-                >
-                  <FaFacebookF size={18} />
-                </a>
-                <a
-                  href="https://x.com/baseraproperty"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-900 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-sm"
-                >
-                  <FaTwitter size={18} />
-                </a>
-                <a
-                  href="https://www.instagram.com/bas.eraproperty/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-900 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-sm"
-                >
-                  <FaInstagram size={18} />
-                </a>
+              <div className="flex gap-3 sm:gap-4">
+                {[FaFacebookF, FaTwitter, FaInstagram].map((Icon, idx) => (
+                  <a
+                    key={idx}
+                    href="/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-900 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-sm"
+                  >
+                    <Icon size={14} className="sm:text-[18px]" />
+                  </a>
+                ))}
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
-          <ContactForm />
+          <div className="w-full hidden sm:block">
+            <ContactForm    />
+          </div>
         </div>
       </div>
 

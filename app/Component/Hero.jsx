@@ -1,44 +1,82 @@
-// components/HeroSection.jsx
 "use client";
 
 import React from "react";
 
-
 export default function HeroSection() {
   return (
-  
-<section className="relative mt-[60px] bg-[url('/hero.jpg')] bg-cover bg-top min-h-[90vh] flex flex-col">
+    <section
+      className="relative mt-[60px] bg-[url('/hero.jpg')]  bg-cover  bg-center md:bg-top min-h-[90vh] flex flex-col text-white"
+    >
+      {/* 🔹 Dark Overlay for better contrast */}
+      <div className="absolute inset-0 bg-black/50"></div>
 
-      {/* Dark Overlay */}
-      {/* <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900/80"></div> */}
+      {/* 🔹 Hero Content */}
+      <div className="relative z-10 flex flex-col justify-center flex-1 px-4 sm:px-6 md:px-12 lg:px-20">
+        <div className="max-w-2xl">
+          {/* Heading */}
+          <h1
+            className="
+              font-semibold 
+              leading-tight 
+              text-[26px] 
+              sm:text-[40px] 
+              md:text-[52px] 
+              lg:text-[60px]
+            "
+          >
+            Quick{" "}
+            <span
+              className="
+                font-light 
+                 sm:inline 
+                text-[20px] 
+                sm:text-[28px] 
+                md:text-[32px]
+              "
+            >
+              Best Services
+            </span>
+          </h1>
 
-      {/* Hero Content */}
-      <div className="relative z-10 flex-1 flex items-center">
-        <div className="mx-auto px-6 md:px-20 w-full ">
-          <div className="max-w-2xl flex flex-col gap-8 p-[60px] ">
-            <h1 className="text-white md:mb-12 text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
-              Quick <br className="sm:hidden" />
-        <span className=" font-normal" >      Best Services </span>
-            </h1>
+          {/* Paragraph */}
+          <p
+            className="
+              text-white/90 
+              mt-3 sm:mt-5 
+              text-[13px] 
+              sm:text-[16px] 
+              md:text-[18px] 
+              leading-[22px] sm:leading-[28px] 
+              max-w-md
+            "
+          >
+            We provide the best service and repair for all brands of home
+            appliances at your home.
+          </p>
 
-            <p className="text-white/90 text-lg md:text-xl mb-6 max-w-xl">
-              We provide the best service and repair for all brands of home appliances at your home.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="tel:18001030575"
-                className="bg-[#ca232a]  hover:bg-transparent hover:border hover:border-red-500 text-white px-8 py-4 font-medium transition-colors text-center"
-              >
-                📞 1800 103 0575
-              </a>
-              <a
-                href="#contact"
-                className="bg-white hover:bg-gray-100 text-black px-8 py-4 font-medium transition-colors text-center"
-              >
-                Book a Service
-              </a>
-            </div>
+          {/* Button */}
+          <div className="mt-6 sm:mt-8">
+            <a
+              href="tel:18001030575"
+              className="
+                inline-block 
+                bg-[#ca232a] 
+                text-white 
+                font-semibold 
+                text-[11px] 
+                sm:text-[14px] 
+                px-5 sm:px-7 
+                py-2 sm:py-3 
+                rounded-md 
+                border border-transparent
+                hover:bg-transparent 
+                hover:border-[#ca232a] 
+                transition-all 
+                duration-300
+              "
+            >
+              📞 1800 103 0575
+            </a>
           </div>
         </div>
       </div>
