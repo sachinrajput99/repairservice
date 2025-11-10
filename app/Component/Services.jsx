@@ -19,7 +19,7 @@ const properties = [
   {
     name: "Microwave Repair",
     description:
-      "If the turntable isn’t spinning or the control panel isn't responding, you're likely dealing with more than just a minor issue. If both are true, you're definitely in the right place for help.",
+      "If the turntable isn’t spinning or the control panel isn&apos;t responding, you&apos;re likely dealing with more than just a minor issue. If both are true, you&apos;re definitely in the right place for help.",
     image: "/microwave-repair.jpg",
     phone: "18005703132",
   },

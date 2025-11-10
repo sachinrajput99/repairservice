@@ -29,7 +29,7 @@ export default function ContactSection() {
           <div className="space-y-8 sm:space-y-10 ">
             <div  className="hidden sm:block"   >
               <h4 className="text-xl sm:text-2xl font-heading font-semibold text-blue-900 leading-6 sm:leading-7 mb-4 sm:mb-6">
-                Let's Start a Conversation
+                Let&apos;s Start a Conversation
               </h4>
               <p className="text-sm sm:text-base text-slate-700 leading-5 sm:leading-6">
                 Whether your <strong>AC</strong> is not cooling or your <strong>washing machine</strong> has stopped working — our expert technicians are here to help. We offer same-day doorstep appliance repair services with genuine spare parts and transparent pricing. We repair <strong>AC</strong>, <strong>Washing Machine</strong>, <strong>Refrigerator</strong>, <strong>Microwave</strong>, and <strong>LED TV</strong> for all major brands.
