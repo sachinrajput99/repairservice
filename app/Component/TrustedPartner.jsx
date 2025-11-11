@@ -29,8 +29,7 @@ export default function TrustedPartner() {
 
       <p className="text-base sm:text-[16px] md:text-[18px] text-[#797979] mb-12 leading-6 sm:leading-7 md:leading-8 text-left sm:text-left md:text-left font-normal">
         At Customer Care Center India, we specialize in delivering fast, efficient, and professional customer service support across a wide range of products and brands. Whether you&apos;re facing issues with your electronics, home appliances, internet services, or mobile devices — we’re here to help.
-        <br />
-        <br />
+       
         We connect you to the right support team, ensuring your complaints and service requests are handled quickly and effectively. Our dedicated professionals work tirelessly to ensure a hassle-free service experience.
       </p>
 
