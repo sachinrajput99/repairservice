@@ -110,7 +110,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="/about-us"
+            href="/#about"
             className="border-b border-white/20 pb-2 hover:text-white/90 transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >

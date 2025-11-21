@@ -5,7 +5,7 @@ import React from "react";
 export default function HeroSection() {
   return (
     <section
-      className="relative mt-[60px] bg-[url('/hero.jpg')]  bg-cover  bg-center md:bg-top min-h-[90vh] flex flex-col text-white"
+      className="relative mt-[60px] bg-[url('/hero.jpg')]  bg-cover  bg-center md:bg-top h-[50vh] sm:min-h-[90vh]   flex flex-col text-white"
     >
       {/* 🔹 Dark Overlay for better contrast */}
       <div className="absolute inset-0 bg-black/50"></div>
@@ -18,7 +18,7 @@ export default function HeroSection() {
             className="
               font-semibold 
               leading-tight 
-              text-[39px] 
+              text-[41px] 
               sm:text-[40px] 
               md:text-[52px] 
               lg:text-[60px]
@@ -29,7 +29,7 @@ export default function HeroSection() {
               className="
                 font-light 
                  sm:inline 
-                text-[20px] 
+                text-[22px] 
                 sm:text-[28px] 
                 md:text-[32px]
               "
@@ -43,7 +43,7 @@ export default function HeroSection() {
             className="
               text-white/90 
               mt-3 sm:mt-5 
-              text-[14px] 
+              text-[16px] 
               sm:text-[16px] 
               md:text-[18px] 
               leading-[22px] sm:leading-[28px] 
