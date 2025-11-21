@@ -6,7 +6,7 @@ export default function WorkExperience() {
   const stats = [
     {
       icon: <Briefcase size={50} />,
-      value: "390+",
+      value: "2000+",
       label: "Projects Completed",
     },
     {

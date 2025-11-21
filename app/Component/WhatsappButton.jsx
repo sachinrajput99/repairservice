@@ -3,7 +3,7 @@ import React from "react";
 const WhatsappButton = () => {
   return (
     <a
-      href="https://wa.me/"
+      href="https://wa.me/+918510070555"
       target="_blank"
       rel="noopener noreferrer"
       class="fixed bottom-5 right-5 w-16 h-16 z-[9999] focus:outline-none"

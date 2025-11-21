@@ -21,10 +21,10 @@ const EmergencyCallSection = () => {
           {/* Right */}
           <div className="right">
             <a
-              href="tel:18001030575"
+              href="tel:+918510070555"
               className="inline-block bg-white font-semibold text-lg md:text-xl px-6 py-3 rounded-md hover:bg-gray-100 transition-colors"
             >
-              1800 103 0575
+       📞 851-007-0555
             </a>
           </div>
         </div>

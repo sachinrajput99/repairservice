@@ -28,7 +28,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="/about-us"
+              href="#about"
               className="uppercase tracking-wide hover:text-black/70 transition-colors"
             >
               About
@@ -40,7 +40,7 @@ const Navbar = () => {
               Services
             </a>
             <Link
-              href="/contact"
+              href="/#contact"
               className="uppercase tracking-wide hover:text-black/70 transition-colors"
             >
               Contact

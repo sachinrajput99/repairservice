@@ -57,7 +57,7 @@ export default function HeroSection() {
           {/* Button */}
           <div className="mt-8 sm:mt-8">
             <a
-              href="tel:18001030575"
+              href="tel:+918510070555"
               className="
                 inline-block 
                 bg-[#ca232a] 
@@ -75,7 +75,7 @@ export default function HeroSection() {
                 duration-300
               "
             >
-              📞 1800 103 0575
+              📞 851-007-0555
             </a>
           </div>
         </div>

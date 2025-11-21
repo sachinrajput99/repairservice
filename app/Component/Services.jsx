@@ -7,41 +7,42 @@ const properties = [
     description:
       "No need to worry—24×7 Customer Service Centre provides expert washing machine repair services in Delhi to get your appliance back up and running smoothly.",
     image: "/washing-machine-service.jpg",
-    phone: "18005703132",
+    phone: "8510070555",
   },
   {
     name: "Refrigerator Repair",
     description:
       "A malfunctioning fridge can quickly turn a good day into a frustrating one. But don’t worry—24×7 Customer Service Centre offers expert refrigerator repair services in Delhi to get things back on track.",
     image: "/refrigeratorrepair.jpeg",
-    phone: "18005703132",
+    phone: "8510070555",
   },
   {
     name: "Microwave Repair",
     description:
       "If the turntable isn’t spinning or the control panel isn&apos;t responding, you&apos;re likely dealing with more than just a minor issue. If both are true, you&apos;re definitely in the right place for help.",
     image: "/microwave-repair.jpg",
-    phone: "18005703132",
+    phone: "8510070555",
   },
    {
     name: "LED TV Repair",
     description:
       "24×7 Customer Service Centre offers reliable and professional LED TV repair services in Delhi to bring your entertainment back to life.",
     image: "/led-tv-repair.jpg",
-    phone: "18005703132",
+    phone: "8510070555",
   },
   {
     name: "Air Conditioner Repair",
     description:
       "Does it seem that your air conditioner doesn’t want to cool? Are water leaks, strange noises, or power fluctuations giving you problems? Hire the best professionals today for AC Repair in Delhi.",
     image: "/air-conditioner-repair.jpg",
-    phone: "18005703132",
+    phone: "8510070555",
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="bg-white pt-8 pb-16">
+    <section id="services" className="bg-white pt-8 pb-1 md:pt-16">
+      <div></div>
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl mt-12 font-bold text-center mb-12">
@@ -79,7 +80,7 @@ export default function Services() {
                 {/* Button */}
                 <div className="mt-5">
                   <a
-                    href={`tel:${property.phone}`}
+                    href={`tel:+91${property.phone}`}
                     className="block text-center bg-blue-600 text-white font-medium py-2 rounded-md hover:bg-blue-700 transition-colors"
                   >
                     Call Now
